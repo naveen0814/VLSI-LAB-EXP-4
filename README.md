@@ -11,26 +11,26 @@ Spartan6 FPGA
 
 **LOGIC DIAGRAM**
 
-SR FLIPFLOP
+# SR FLIPFLOP
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/77fb7f38-5649-4778-a987-8468df9ea3c3)
 
 
-JK FLIPFLOP
+# JK FLIPFLOP
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/1510e030-4ddc-42b1-88ce-d00f6f0dc7e6)
 
-T FLIPFLOP
+# T FLIPFLOP
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/7a020379-efb1-4104-85ee-439d660baa08)
 
 
-D FLIPFLOP
+# D FLIPFLOP
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/dda843c5-f0a0-4b51-93a2-eaa4b7fa8aa0)
 
 
-COUNTER
+# COUNTER
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/a1fc5f68-aafb-49a1-93d2-779529f525fa)
 
@@ -50,7 +50,7 @@ STEP:10 Double click on the Implement Design and double click on the Generate Pr
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
 VERILOG CODE:
-D FLIP FLOP
+# D FLIP FLOP
 ```
 module DFlipFlop (D, clk, reset, Q) ;
 input D;
@@ -66,7 +66,7 @@ begin
 end
 endmodule
 ```
-JK FLIP FLOP
+# JK FLIP FLOP
 ```
 module JK_flipflop (q, q_bar, j,k, clk, reset);
   input j,k,clk, reset;
@@ -87,7 +87,7 @@ module JK_flipflop (q, q_bar, j,k, clk, reset);
   assign q_bar = ~q;
 endmodule
 ```
-SR FLIP FLOP:
+# SR FLIP FLOP:
 ```
 module SR_flipflop (q, q_bar, s,r, clk, reset);
   input s,r,clk, reset;
@@ -108,7 +108,7 @@ module SR_flipflop (q, q_bar, s,r, clk, reset);
   assign q_bar = ~q;
 endmodule
 ```
-T FLIP FLOP
+# T FLIP FLOP
 ```
 module tff (t,clk, rstn,q);  
  input t,clk, rstn;
@@ -124,7 +124,7 @@ module tff (t,clk, rstn,q);
   end  
 endmodule
 ```
-RIPPLE CARRY ADDER:
+# RIPPLE CARRY ADDER:
 ```
 module D_FF(q, d, clk, reset);
 output q;
@@ -152,7 +152,7 @@ T_FF tff2(q[2], q[1], reset);
 T_FF tff3(q[3], q[2], reset);
 endmodule
 ```
-MOD 10 COUNTER
+# MOD 10 COUNTER
 ```
 module counter(
 input clk,rst,enable,
@@ -236,7 +236,7 @@ D FLIP FLOP
 <img width="962" alt="320572212-f2772b2a-196d-4b24-871c-5f153ef91116" src="https://github.com/CalebSamraj14/VLSI-LAB-EXP-4/assets/163808923/10b19508-5408-46d8-a279-81fdaf7eb2d5">
 
 
-RESULT:
+# RESULT:
 Thus the simulation and implementation of sequential logic gates is done and verified.
 
 
